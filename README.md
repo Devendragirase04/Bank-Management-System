@@ -11,11 +11,21 @@
 
 **A full-stack banking application with a live analytics engine, interactive dashboards,
 Power BI integration, and an advanced SQL analytics layer — built to demonstrate
-end-to-end Data Analyst skills.**
+end-to-end Data Analyst & Database Engineering skills.**
 
 [Features](#-features) · [Analytics](#-data-analytics-capabilities) · [Database Design](#-database-design) · [Quick Start](#-quick-start) · [Project Structure](#-project-structure) · [Tech Stack](#-tech-stack)
 
 </div>
+
+---
+
+## 🎯 Key Skills Showcased
+
+If you are a recruiter or client, this project demonstrates:
+* **Advanced SQL & Database Design**: Normalization (15+ tables), indexing strategies, CTEs, window functions (`DENSE_RANK`, `LAG`, `ROW_NUMBER`), and custom analytics views.
+* **Full-Stack Application Development**: A desktop banking environment built with Python (Tkinter + Modern Bootstrap themes) connected to a production-grade relational database.
+* **Data Visualization & Analytics**: Interactive in-app reporting (Matplotlib, Seaborn) alongside browser-based dashboards (Plotly) and automated report generators.
+* **BI & ETL Integration**: Direct integration with Power BI (Import mode & REST API live-streaming) fed by a real-time data-stream simulator.
 
 ---
 
@@ -29,7 +39,7 @@ end-to-end Data Analyst skills.**
 | 📈 **EDA Report Generator** | One-command script → rich HTML exploratory report (9 chart sections, executive KPIs) |
 | 🗄️ **Advanced SQL Layer** | 11 analytical views, stored procedures, triggers, and a curated showcase of 11 advanced DA queries |
 | 📤 **Multi-Format Export** | Download analytics as PDF, CSV, or PNG from the dashboard |
-| ⚡ **Power BI Integration** | Real-time DirectQuery mode + streaming simulator to feed live dashboards |
+| ⚡ **Power BI Integration** | Direct connection (Import mode) + live streaming API & real-time simulator |
 | 🧪 **Synthetic Data Generator** | Faker-powered script generates 500 customers, 500 accounts, and 3 000 transactions |
 | 🏗️ **Production-Grade Architecture** | Connection pooling, Repository Pattern, Audit Logging, thread-safe singletons |
 
@@ -89,7 +99,7 @@ Run once to generate `exports/eda_report.html` — a 9-section exploratory dashb
 | Peak Hour Analysis | `HOUR()` time-bucketing + dual-axis |
 
 ### 5. Power BI Real-Time Integration
-See [`powerbi_setup_guide.md`](powerbi_setup_guide.md) for DirectQuery setup and real-time streaming:
+See [`powerbi_setup_guide.md`](powerbi_setup_guide.md) for integration setup and real-time streaming:
 ```bash
 python powerbi_streamer.py --simulate --interval 2.0 --count 20
 ```
@@ -173,7 +183,7 @@ audit_logs      — every user action timestamped
   analytics_dashboard  interactive_charts  analysis/
   (Matplotlib/Seaborn) (Plotly HTML)       eda_report.py
                                            sql_showcase.sql
-                                           Power BI (DirectQuery)
+                                           Power BI Integration
 ```
 
 ---
@@ -299,7 +309,7 @@ bank-management-system/
 | **Reporting** | ReportLab (PDF), OpenPyXL (Excel), CSV |
 | **Security** | bcrypt (password hashing), parameterised queries |
 | **Data Generation** | Faker (realistic Indian locale data) |
-| **BI Integration** | Power BI DirectQuery + REST API streaming |
+| **BI Integration** | Power BI (Import Mode & REST API streaming) |
 | **Environment** | python-dotenv |
 
 ---
