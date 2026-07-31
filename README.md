@@ -187,8 +187,8 @@ audit_logs      — every user action timestamped
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/bank-management-system.git
-cd bank-management-system
+git clone https://github.com/Devendragirase04/Bank-Management-System.git
+cd Bank-Management-System
 ```
 
 ### 2. Create a Virtual Environment & Install Dependencies
@@ -306,14 +306,8 @@ bank-management-system/
 
 ## 📸 Screenshots
 
-> **Add your own screenshots here!**
-> Run the app, take screenshots of:
-> - The Analytics Dashboard (charts visible)
-> - The EDA HTML Report in the browser
-> - The Admin Overview screen
->
-> Then place them in `assets/screenshots/` and embed with:
-> `![Analytics Dashboard](assets/screenshots/analytics_dashboard.png)`
+### Analytics Dashboard
+![Analytics Dashboard](assets/analytics_dashboard.png)
 
 ---
 
